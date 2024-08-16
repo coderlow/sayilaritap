@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı tap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>"Sayı tap oyunu"</h1>
+
+    <div id="game-container">
+        <p>1-dən 100-ə qədər rəqəm yazın <span id="max-number"></span>:</p>
+        <input type="number" id="guess-input" min="1" max="100">
+        <button id="submit-button">Cavabla</button>
+        <p id="message"></p>
+        <p id="hint-message"></p>
+        <p id="attempts-left">Cəhd sayı: 3</p>
+        <p id="score">Xal: 0</p>
+        <div id="score-board">
+            <h2>Liderlər cədvəli</h2>
+            <ul id="leaderboard"></ul>
+        </div>
+        <button id="restart-button" style="display: none;">Yenidən başla</button>
+        <button id="show-help">Oyun qaydaları</button>
+        <div id="instructions" style="display: none;">
+            <h2>Qaydalar</h2>
+            <p>Bu oyunda siz 1-dən 100 qədər verilmiş rəqəmi tapmalısınız <span id="instructions-max-number"></span>. Sizin rəqəmi tapmaq üçün 3 cəhdiniz var. Köməklərdən istifadə etməyi unutmayın. Uğurlar!</p>
+        </div>
+        <button id="theme-toggle">Ağ-qara</button>
+        <button id="share-results">Dostlarınla paylaş</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
